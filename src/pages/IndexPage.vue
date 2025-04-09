@@ -1,43 +1,54 @@
 <template>
-  <q-page class="row items-center justify-evenly">
-    <example-component
-      title="Example component"
-      active
-      :todos="todos"
-      :meta="meta"
-    ></example-component>
-  </q-page>
+  <main class="row">
+
+  <section id="apresentacao" class="col-md-6 col-xs-12">
+    <h1>Olá! Sou Elisa</h1>
+    <h2>Desenvolvedora Web e Mobile</h2>
+    <h4>Para mim, programação é como um jogo de desafios lógicos: cada problema é uma nova fase a ser superada.</h4>
+
+    
+    <q-nav>
+      <ul>
+        <li><a href=”#”>pagina 1</a></li>
+        <li><a href=”#”>pagina 2</a></li>
+        <li><a href=”#”>pagina 3</a></li>
+        <li><a href=”#”>pagina 4</a></li>
+      </ul>
+    </q-nav>
+
+  </section>
+
+  <section id="informacoes" class="col-md-6 col-xs-12">
+    <section id="sobreMim">
+      <p>Sou técnica em informática e atualmente curso Bacharelado em Sistemas de Informação. Tenho grande interesse por arte, design, matemática e programação, áreas que me levaram a explorar o desenvolvimento Frontend e Mobile, onde vejo a junção perfeita entre criatividade e lógica. Estou constantemente aprendendo e me desafiando em novos projetos.</p>
+      <br>
+      <p>Além de minha paixão por tecnologia, também dou aula de flauta doce para crianças, o que me permite desenvolver habilidades de comunicação, paciência e empatia. Acredito que ensinar e aprender são processos interligados e essa experiência me ajuda a crescer tanto profissionalmente quanto pessoalmente.</p>
+    </section>
+
+    <section id="habilidades">
+
+    </section>
+    <section id="formacaoAcademica">
+
+    </section>
+</section>
+</main>
 </template>
 
-<script setup lang="ts">
-import { ref } from 'vue';
-import type { Todo, Meta } from 'components/models';
-import ExampleComponent from 'components/ExampleComponent.vue';
-
-const todos = ref<Todo[]>([
-  {
-    id: 1,
-    content: 'ct1'
-  },
-  {
-    id: 2,
-    content: 'ct2'
-  },
-  {
-    id: 3,
-    content: 'ct3'
-  },
-  {
-    id: 4,
-    content: 'ct4'
-  },
-  {
-    id: 5,
-    content: 'ct5'
-  }
-]);
-
-const meta = ref<Meta>({
-  totalCount: 1200
-});
+<script lang="ts">
 </script>
+
+<style>
+
+main{
+  font-size: medium;
+  font-family:'Times New Roman', Times, serif;
+}
+#apresentacao{
+  background-color: red;
+}
+#informacoes{
+  background-color: green;
+}
+
+</style>
